@@ -23,8 +23,9 @@ use x@buybuild.xyz, the temporary address requested by the owner.
 
 Vercel settings are declared in vercel.json: Other/static framework, `npm run
 build`, dist/ output, canonical-domain redirects, clean URLs and font caching.
-GitHub main is the intended production branch; Git integration is pending. Production should be public; source is published in Threadigit/buildxlab.
-A repository-based Vercel build is verified; automatic deployment on push is pending. Domain attachment and DNS status are recorded in DEPLOYMENT.md.
+GitHub main is connected to Vercel and deploys automatically on every push.
+Production is public; source is published in Threadigit/buildxlab.
+Domain attachment and DNS status are recorded in DEPLOYMENT.md.
 
 Primary domain: buildxlab.co. www.buildxlab.co and buildxlab.xyz should redirect
 to the primary once their DNS and Vercel domain attachments are configured.

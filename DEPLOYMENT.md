@@ -5,21 +5,21 @@ Verified 2026-10-31. Project and site are already created; reuse them.
 - Repository: https://github.com/Threadigit/buildxlab (owner-created public repository).
 - Local source: /workspace/buildxlab, main branch.
 - GitHub authorization restored after reconnecting the app. main is pushed.
-  Verified remote commit 8b4dbaf8ffdafed329e5dd9182867c787b9fd573.
-  Future push-triggered deployment linking is still awaiting the project Git connection.
+  main is connected to the existing Vercel project. A Git push triggered
+  production deployment dpl_2mKBiE3U7zSFDs74C8Q6LMSESr87 (READY),
+  commit 48754b9fc894f06b13011662e1ee1dfcc8dbebe2.
 - Vercel team: toluadetuyis-projects, team_1HRMSafo3kjx8ErMiKg6Rlww.
 - Vercel project: buildxlab, prj_MOHzyRvsCKO3SLSa2HzstiYvBYke.
 - Public production: https://buildxlab.vercel.app.
 - Latest verified deployment (including AI-native building):
-  dpl_CGubxHCzoq5ugJNthbGopRKt7jNo, READY, built directly from GitHub
-  main commit 8b4dbaf8ffdafed329e5dd9182867c787b9fd573;
+  dpl_2mKBiE3U7zSFDs74C8Q6LMSESr87, READY, built automatically from GitHub
+  main commit 48754b9fc894f06b13011662e1ee1dfcc8dbebe2;
   production HTTP 200, live AI contact link checked on mobile, and
   responsive checks passed at 320, 390, 768, 1024, 1440 and 1920px.
   Initial assets total about 88KB compressed; no runtime JavaScript or external requests.
-- Initial deployments uploaded files. The latest production build uses Git source.
-  Automatic deployment on push still needs the existing project's Git connection.
-  The create_git_project tool cannot reconnect an existing unlinked project;
-  prefer the existing project's Git settings rather than creating duplicates.
+- Automatic Git deployments are enabled for Threadigit/buildxlab main.
+  The owner connected the existing project in Vercel Git settings; do not create
+  another project. Initial deployments uploaded files before Git was connected.
 - Framework Other/static, Node 22.x, build npm run build, output dist,
   install npm install --ignore-scripts. Production protection disabled.
 
@@ -48,8 +48,8 @@ Do not claim the custom domains serve this site until these checks pass.
 
 1. Read this file and AGENTS.md, inspect local status and current Vercel state.
 2. GitHub push works. Never force push.
-3. Link existing Vercel project to Threadigit/buildxlab main and verify a Git push
-   triggers a deployment. A file-upload deployment alone is not Git integration.
+3. Push approved changes to main, then verify Vercel creates a production
+   deployment for that exact commit and reaches READY. No manual upload needed.
 4. Check DNS after owner's update; preserve email records.
 5. Run npm run build and npm test as relevant. The managed environment requires
    a network permission grant to launch Chromium. Its HTTPS inspection proxy CA
