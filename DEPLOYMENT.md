@@ -10,9 +10,11 @@ Verified 2026-10-31. Project and site are already created; reuse them.
 - Vercel team: toluadetuyis-projects, team_1HRMSafo3kjx8ErMiKg6Rlww.
 - Vercel project: buildxlab, prj_MOHzyRvsCKO3SLSa2HzstiYvBYke.
 - Public production: https://buildxlab.vercel.app.
-- Latest verified deployment before AI-native addition:
-  dpl_4XM7RcComV3QyyjbEiH7AK2FoSAV, READY; production HTTP 200 and
+- Latest verified deployment (including AI-native building):
+  dpl_DpJz46NQNhSHqBVzUKkWrih7vwaA, READY, source commit fcad10b;
+  production HTTP 200, live AI contact link checked on mobile, and
   responsive checks passed at 320, 390, 768, 1024, 1440 and 1920px.
+  Initial assets total about 88KB compressed; no runtime JavaScript or external requests.
 - Deployments currently upload tracked source files directly through Vercel MCP.
   Git integration still needs connection after GitHub authorization is restored.
   The create_git_project tool cannot reconnect an existing unlinked project;
