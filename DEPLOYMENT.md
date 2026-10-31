@@ -4,19 +4,20 @@ Verified 2026-10-31. Project and site are already created; reuse them.
 
 - Repository: https://github.com/Threadigit/buildxlab (owner-created public repository).
 - Local source: /workspace/buildxlab, main branch.
-- GitHub push and connected Contents API both return 403 despite the owner's
-  repository-access update. Awaiting refreshed GitHub connection authorization.
-  No source is published to GitHub yet; do not claim Git deployments are linked.
+- GitHub authorization restored after reconnecting the app. main is pushed.
+  Verified remote commit 8b4dbaf8ffdafed329e5dd9182867c787b9fd573.
+  Future push-triggered deployment linking is still awaiting the project Git connection.
 - Vercel team: toluadetuyis-projects, team_1HRMSafo3kjx8ErMiKg6Rlww.
 - Vercel project: buildxlab, prj_MOHzyRvsCKO3SLSa2HzstiYvBYke.
 - Public production: https://buildxlab.vercel.app.
 - Latest verified deployment (including AI-native building):
-  dpl_DpJz46NQNhSHqBVzUKkWrih7vwaA, READY, source commit fcad10b;
+  dpl_CGubxHCzoq5ugJNthbGopRKt7jNo, READY, built directly from GitHub
+  main commit 8b4dbaf8ffdafed329e5dd9182867c787b9fd573;
   production HTTP 200, live AI contact link checked on mobile, and
   responsive checks passed at 320, 390, 768, 1024, 1440 and 1920px.
   Initial assets total about 88KB compressed; no runtime JavaScript or external requests.
-- Deployments currently upload tracked source files directly through Vercel MCP.
-  Git integration still needs connection after GitHub authorization is restored.
+- Initial deployments uploaded files. The latest production build uses Git source.
+  Automatic deployment on push still needs the existing project's Git connection.
   The create_git_project tool cannot reconnect an existing unlinked project;
   prefer the existing project's Git settings rather than creating duplicates.
 - Framework Other/static, Node 22.x, build npm run build, output dist,
@@ -46,7 +47,7 @@ Do not claim the custom domains serve this site until these checks pass.
 ## Resume
 
 1. Read this file and AGENTS.md, inspect local status and current Vercel state.
-2. If GitHub was reconnected, retry a single push of main. Never force push.
+2. GitHub push works. Never force push.
 3. Link existing Vercel project to Threadigit/buildxlab main and verify a Git push
    triggers a deployment. A file-upload deployment alone is not Git integration.
 4. Check DNS after owner's update; preserve email records.
