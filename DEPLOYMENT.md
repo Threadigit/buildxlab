@@ -16,8 +16,9 @@ Reuse the existing project and repository.
 
 ## Website
 
-The current design uses a compact persistent header, Source Serif display type,
-Inter body text, full-width training rows and a dark incubation section. Browser icon, touch avatar and social preview are updated.
+The current design restores Inter Tight display type, Inter body text, and the
+menu that scrolls below the introduction before sticking to the viewport. It
+retains full-width training rows and clear section hierarchy. Browser icon, touch avatar and social preview are updated.
 Four areas of work: technology, builder training, incubation, and helping
 organisations transition to technology and AI-native ways of working.
 

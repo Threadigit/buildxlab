@@ -19,7 +19,7 @@ equipped with the right technology stack. Owned AI tools and computing are long-
 Fonts and graphics are served locally. See DESIGN.md for the approved brand reference. Font licenses are in public/assets/fonts/.
 The website renders and navigates without JavaScript. The section menu stays
 visible while scrolling; anchor offsets keep headings clear on phones and desktops.
-The browser icon and social preview use the full BuildxLab name. Contact and training links
+The browser icon uses a custom digital x; the social preview uses the full BuildxLab name. Contact and training links
 use x@buybuild.xyz, the temporary address requested by the owner.
 
 ## Hosting

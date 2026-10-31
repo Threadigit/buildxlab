@@ -1,16 +1,18 @@
 # Design and content direction
 
-BuildxLab uses a restrained black-and-white identity, with the company name only.
+BuildxLab uses a restrained black-and-white identity. The page uses the company
+name; the favicon is a custom segmented digital x requested by the owner.
 The owner supplied this training deck as a brand reference:
 https://docs.google.com/presentation/d/1Q9DU-MMAY7kFSRG25DJg8C4TI9yWRcRN1DvYhDFisPs/edit
 
-The current website pairs Source Serif display typography with Inter body text
-and an Inter Tight name. All fonts are served locally with their licenses.
-Use a compact persistent header, comfortable body text, thin rules, and generous
-but deliberate spacing. Keep the visual hierarchy clear on phones and desktops.
+The owner prefers the original Inter Tight display type, Inter body text,
+prominent name and off-white background. All fonts are served locally with licenses.
+The section menu follows the introduction, scrolls naturally, then sticks at the
+top of the viewport. Do not replace it with a header fixed from the start.
+Keep comfortable body text, clear section labels and thin rules.
 
 Sections have distinct roles: a clear introduction and ambition; technology;
-builder training with full-width role rows; a dark incubation section with links
+builder training with full-width role rows; an incubation section with links
 to the real companies; organisational transition; and a direct email contact.
 Funding belongs in the incubation description, above the company list.
 The website must render and navigate without JavaScript, with visible keyboard
@@ -27,11 +29,12 @@ Do not introduce animations that hide content or external startup requests.
 - Product Builder and Market Builder are the two training roles. AI research,
   prototyping, product development and business workflows belong in the training
   introduction. Do not add a standalone AI beginner section or availability note.
-- Say "Companies we are working with" for Novacrust and Pagoramp. Link to
+- Say "Companies currently in incubation." for Novacrust and Pagoramp. Link to
   https://novacrust.com/ and https://pagoramp.com/.
 - Mention potential funding without naming a funding partner or promising it.
 - Use x@buybuild.xyz until an official contact is supplied.
 
 No B/X monogram, invented product illustrations, generic feature cards, fake
 metrics, testimonials or client logos. No private training slides or facilitator
-notes are published. Browser icon and link preview use the BuildxLab name.
+notes are published. The link preview uses the BuildxLab name and Inter Tight typography. The browser
+icon is a small, high-contrast vector digital x; the touch avatar remains the name.
