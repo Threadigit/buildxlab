@@ -9,7 +9,10 @@ The owner prefers the original Inter Tight display type, Inter body text,
 prominent name and off-white background. All fonts are served locally with licenses.
 The section menu follows the introduction, scrolls naturally, then sticks at the
 top of the viewport. Do not replace it with a header fixed from the start.
-Keep comfortable body text, clear section labels and thin rules.
+Refine this established design rather than replacing it. Keep comfortable body
+text, clear section labels and thin rules. Align the service descriptions to the
+introductory text column, with wider stacked headings on tablets and phones.
+Use a near-black incubation section for restrained monochrome alternation.
 
 Sections have distinct roles: a clear introduction and ambition; technology;
 builder training with full-width role rows; an incubation section with links
@@ -21,6 +24,7 @@ Do not introduce animations that hide content or external startup requests.
 
 ## Owner-approved content
 
+- Make building and running a two-person business sustainable and repeatable.
 - Build products and profitable businesses with up to two people equipped with
   the right technology stack. Technology carrying 80% of the work is an ambition,
   not an achieved metric. Owned AI tools and computing are longer-term plans.
@@ -32,6 +36,7 @@ Do not introduce animations that hide content or external startup requests.
 - Say "Companies currently in incubation." for Novacrust and Pagoramp. Link to
   https://novacrust.com/ and https://pagoramp.com/.
 - Mention potential funding without naming a funding partner or promising it.
+- The corporate heading is "Help Corporate Organisations make the transition".
 - Use x@buybuild.xyz until an official contact is supplied.
 
 No B/X monogram, invented product illustrations, generic feature cards, fake

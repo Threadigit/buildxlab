@@ -23,3 +23,6 @@ Do not add the standalone "Start with AI-native building" section.
 Use Inter Tight display type and the menu that scrolls beneath the introduction
 before sticking to the viewport. Retain the clearer full-width training hierarchy.
 The company heading is "Companies currently in incubation."
+
+Polish the current design rather than replacing it. A dark incubation section is
+authorized. The corporate heading is "Help Corporate Organisations make the transition".
