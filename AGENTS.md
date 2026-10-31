@@ -8,7 +8,8 @@ incubation to test the approach, and helping organisations adopt technology and
 AI-native workflows. Technology handling 80% of work is an ambition. Do not present
 future AI/compute ownership as already achieved, or funding as guaranteed.
 Use x@buybuild.xyz for contact until the owner supplies an official address.
-Use the BuildxLab name on the page, without a B/X logo. The favicon uses a
+Use the BuildxLab name on the page. The owner has approved the supplied new X
+logo beside the name in the footer only; keep the header name-only. The favicon uses a
 custom digital x, explicitly requested by the owner. Mention potential funding
 without naming a funding partner.
 

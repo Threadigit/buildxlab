@@ -49,7 +49,8 @@ Do not introduce animations that hide content or external startup requests.
 - The corporate heading is "Help Corporate Organisations make the transition".
 - Use x@buybuild.xyz until an official contact is supplied.
 
-No B/X monogram, invented product illustrations, generic feature cards, fake
+The supplied new X logo appears beside the name in the footer only. No old B/X
+monogram, invented product illustrations, generic feature cards, fake
 metrics, testimonials or client logos. No private training slides or facilitator
 notes are published. The link preview uses the BuildxLab name and Inter Tight typography. The browser
 icon is a small, high-contrast vector digital x; the touch avatar remains the name.

@@ -65,3 +65,12 @@ retain 44px targets. Desktop ambition text aligns with the introduction.
 Reviewed final screenshots at 390, 1024 and 1440px and the pinned desktop menu.
 The existing six-size functional suite covers native anchors, section tracking,
 footer navigation, direct links and operation without JavaScript.
+
+
+## Supplied logo — footer only
+
+Added the owner's supplied X artwork beside the footer name, preserving its
+original square aspect ratio and pixels. It loads lazily with explicit 36px
+dimensions; the header, favicon and social preview are unchanged. Reviewed the
+footer at 390px and verified 320, 390, 768 and 1440px: image decodes, no horizontal
+overflow, one footer-only image, and a 44px home-link target.
