@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 580" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Three layers. One connected lab.</title><desc id="desc">An architectural illustration connects technology, builders and ventures through three stacked layers.</desc>
+<g stroke="#d6dbd0" stroke-width="1"><path d="M30 175 300 20M30 275 450 32M30 375 525 90M30 475 525 190M100 535 525 290M280 545 525 405M30 225 480 485M30 125 525 410M80 50 525 307M250 30 525 190M30 335 390 545"/></g>
+<path d="m72 378 198-114 218 126-198 114Z" fill="#d4dcd0" stroke="#173b31" stroke-width="1.5"/>
+<path d="M72 378v26l218 126v-26L72 378Z" fill="#b4c0ad" stroke="#173b31" stroke-width="1.5"/>
+<path d="m290 504 198-114v26L290 530v-26Z" fill="#899f88" stroke="#173b31" stroke-width="1.5"/>
+<path d="m105 386 165-95 185 106-165 95-185-106Z" stroke="#173b31" stroke-opacity=".3"/>
+<path d="M142 330v-70m116 136v-70m160 21v-70" stroke="#173b31" stroke-width="1.5" stroke-dasharray="4 6"/>
+<path d="m72 250 198-114 218 126-198 114Z" fill="#173b31" stroke="#173b31" stroke-width="1.5"/>
+<path d="M72 250v25l218 126v-25L72 250Z" fill="#102b24" stroke="#173b31" stroke-width="1.5"/>
+<path d="m290 376 198-114v25L290 401v-25Z" fill="#43664c" stroke="#173b31" stroke-width="1.5"/>
+<g stroke="#dcf18d" stroke-width="1.5"><path d="m172 242 48-28 48 28-48 28-48-28Zm115 66 48-28 48 28-48 28-48-28Z"/><path d="m220 242 115 66M220 242v-29m115 95v-29"/><path d="m267 187 48-28 48 28-48 28-48-28Z"/><path d="m315 187-95 55m95-55 20 121"/></g>
+<path d="M142 202v-69m116 135v-69m160 21v-71" stroke="#173b31" stroke-width="1.5" stroke-dasharray="4 6"/>
+<path d="m72 123 198-114 218 126-198 114Z" fill="#dcf18d" stroke="#173b31" stroke-width="1.5"/>
+<path d="M72 123v25l218 126v-25L72 123Z" fill="#b5d364" stroke="#173b31" stroke-width="1.5"/>
+<path d="m290 249 198-114v25L290 274v-25Z" fill="#8eae51" stroke="#173b31" stroke-width="1.5"/>
+<path d="m189 120 82-47 99 57-82 47-99-57Z" stroke="#173b31" stroke-width="1.5"/>
+<path d="m213 120 58-33 74 43-58 33-74-43Z" stroke="#173b31" stroke-width="1.5"/>
+<path d="m237 120 34-19 50 29-34 19-50-29Z" fill="#173b31"/>
+<g fill="#173b31"><circle cx="142" cy="163" r="4"/><circle cx="258" cy="230" r="4"/><circle cx="418" cy="182" r="4"/></g>
+<g fill="#dcf18d"><circle cx="142" cy="290" r="4"/><circle cx="258" cy="357" r="4"/><circle cx="418" cy="309" r="4"/></g>
+<path d="M290 554v14m-7-7h14" stroke="#173b31" stroke-width="1.5"/>
+</svg>

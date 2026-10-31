@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://buildxlab.co/sitemap.xml

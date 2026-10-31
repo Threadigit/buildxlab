@@ -1,0 +1,12 @@
+{
+  "name": "buildxlab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BuildxLab — technology, builders and ventures.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "python3 -m http.server 8080 --directory public",
+    "test": "python3 tests/site.py"
+  },
+  "engines": { "node": ">=22" }
+}

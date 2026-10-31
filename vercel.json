@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+    ]},
+    { "source": "/assets/fonts/(.*)", "headers": [
+      { "key": "Cache-Control", "value": "public, max-age=604800" }
+    ]}
+  ],
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.buildxlab.co" }], "destination": "https://buildxlab.co/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "buildxlab.xyz" }], "destination": "https://buildxlab.co/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.buildxlab.xyz" }], "destination": "https://buildxlab.co/:path*", "permanent": true }
+  ]
+}
