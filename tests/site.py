@@ -6,7 +6,8 @@ base=os.environ.get('BUILDXLAB_TEST_URL','http://127.0.0.1:8080')
 with sync_playwright() as p:
  browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
  for width,height in [(320,740),(390,844),(768,1024),(1024,768),(1440,900),(1920,1080)]:
-  page=browser.new_page(viewport={'width':width,'height':height},reduced_motion='reduce')
+  # The managed proxy CA is validated separately by curl; Chromium uses its own trust store.
+  page=browser.new_page(ignore_https_errors=bool(os.environ.get('CODEX_PROXY_CERT')),viewport={'width':width,'height':height},reduced_motion='reduce')
   errors=[];failed=[]
   page.on('pageerror',lambda e:errors.append(str(e)))
   page.on('response',lambda r:failed.append((r.status,r.url)) if r.status>=400 else None)
@@ -35,7 +36,7 @@ with sync_playwright() as p:
   print(f'PASS {width}x{height}: no overflow/errors, links, images, 70% target, first-party loading')
   page.close()
  # Core copy and navigation continue to work without JavaScript.
- page=browser.new_page(java_script_enabled=False)
+ page=browser.new_page(java_script_enabled=False,ignore_https_errors=bool(os.environ.get('CODEX_PROXY_CERT')))
  page.goto(base,wait_until='networkidle');assert page.locator('h1').is_visible();assert page.locator('.track>a').count()==2
  print('PASS no-JavaScript rendering')
  browser.close()
