@@ -1,5 +1,5 @@
 """Responsive and functional smoke checks for the static BuildxLab site."""
-import os,json
+import os,json,time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 base=os.environ.get('BUILDXLAB_TEST_URL','http://127.0.0.1:8080')
@@ -24,9 +24,10 @@ with sync_playwright() as p:
   page.get_by_role('link',name='Builders',exact=True).click()
   page.wait_for_function("location.hash==='#builders'")
   assert page.locator('#builders-title').is_visible()
-  nav=page.locator('.index').bounding_box()
+  nav=page.locator('.navigation').bounding_box()
   heading=page.locator('#builders-title').bounding_box()
   assert abs(nav['y'])<2,f'menu is not stable at {width}: {nav}'
+  assert abs(nav['x'])<2 and abs(nav['width']-width)<2,f'menu background must span the viewport at {width}'
   assert heading['y']>=nav['y']+nav['height'],f'menu covers heading at {width}'
   page.get_by_role('link',name='Organisations',exact=True).click()
   page.wait_for_function("location.hash==='#organisations'")
@@ -36,15 +37,41 @@ with sync_playwright() as p:
   assert 'target we are working towards' in page.locator('.ambition').text_content()
   assert page.get_by_role('heading',name='Companies currently in incubation.').count()==1
   assert all(a.get_attribute('href').startswith('mailto:x@buybuild.xyz') for a in page.locator('.track>a').all())
+  # Manual scrolling must update the current section in both directions, without changing history.
+  original_hash=page.evaluate('location.hash')
+  for section_id in ['technology','builders','companies','organisations','companies','builders','technology']:
+   page.evaluate("id=>window.scrollTo(0,document.getElementById(id).getBoundingClientRect().top+scrollY-document.querySelector('.navigation').offsetHeight-16)",section_id)
+   page.wait_for_function("id=>document.querySelector('.index a[aria-current=\"location\"]')?.getAttribute('href')==='#'+id",arg=section_id,timeout=3000)
+   assert page.locator('.index a[aria-current="location"]').count()==1
+   if section_id=='companies':
+    assert page.evaluate("[1,innerWidth-1].every(x=>document.elementFromPoint(x,20)?.closest('.navigation'))"),'menu background detaches over dark section'
+  assert page.evaluate('location.hash')==original_hash
+  page.evaluate('window.scrollTo(0,document.documentElement.scrollHeight)')
+  page.wait_for_function("document.querySelector('.index a[aria-current=\"location\"]')?.getAttribute('href')==='#organisations'",timeout=3000)
+  assert abs(page.locator('.navigation').bounding_box()['y'])<2,'menu must stay pinned through the footer'
   page.evaluate('window.scrollTo(0,0)')
+  page.wait_for_function("!document.querySelector('.index a[aria-current]')",timeout=3000)
+  page.mouse.move(0,0)
   page.screenshot(path=f'/tmp/buildxlab-{width}.png',full_page=True)
   assert not errors,errors
   assert not failed,failed
   assert page.evaluate("performance.getEntriesByType('resource').every(r=>new URL(r.name).origin===location.origin)"),'third-party startup request'
-  print(f'PASS {width}x{height}: no overflow/errors, links, images, 80% target, first-party loading')
+  print(f'PASS {width}x{height}: full-width sticky menu, scroll highlighting, content, links and first-party loading')
   page.close()
+ # A direct section link must be highlighted after loading, too.
+ page=browser.new_page(ignore_https_errors=bool(os.environ.get('CODEX_PROXY_CERT')),reduced_motion='reduce')
+ page.goto(base.rstrip('/')+'/#companies',wait_until='networkidle')
+ page.wait_for_function("document.querySelector('.index a[aria-current=\"location\"]')?.getAttribute('href')==='#companies'",timeout=3000)
+ page.close()
+ print('PASS direct section link highlighting')
  # Core copy and navigation continue to work without JavaScript.
  page=browser.new_page(java_script_enabled=False,ignore_https_errors=bool(os.environ.get('CODEX_PROXY_CERT')))
  page.goto(base,wait_until='networkidle');assert page.locator('h1').is_visible();assert page.locator('.track>a').count()==2
+ page.get_by_role('link',name='Builders',exact=True).click()
+ # Poll from Python: page-level animation-frame polling is disabled with JavaScript off.
+ for _ in range(40):
+  if abs(page.locator('.navigation').bounding_box()['y'])<2:break
+  time.sleep(.05)
+ assert abs(page.locator('.navigation').bounding_box()['y'])<2
  print('PASS no-JavaScript rendering')
  browser.close()

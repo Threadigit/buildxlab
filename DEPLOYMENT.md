@@ -29,7 +29,8 @@ the builder-training introduction; there is no separate AI beginner section.
 Mention potential funding without naming a funding partner.
 
 Responsive and navigation checks passed at 320, 390, 768, 1024, 1440 and 1920px,
-including sticky menu position and unobscured anchor headings. No-JavaScript
+including a full-width sticky menu, unobscured anchor headings, and active-section
+highlighting during forward/backward scrolling, direct links and footer reading. No-JavaScript
 rendering passed. Public HTTPS and current content were checked on buildxlab.co.
 
 ## Domains and DNS — complete

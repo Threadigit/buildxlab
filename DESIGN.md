@@ -8,7 +8,11 @@ https://docs.google.com/presentation/d/1Q9DU-MMAY7kFSRG25DJg8C4TI9yWRcRN1DvYhDFi
 The owner prefers the original Inter Tight display type, Inter body text,
 prominent name and off-white background. All fonts are served locally with licenses.
 The section menu follows the introduction, scrolls naturally, then sticks at the
-top of the viewport. Do not replace it with a header fixed from the start.
+top of the viewport. Its background spans the full viewport while the links
+remain aligned with the content grid. Highlight the reading position with
+aria-current="location", including manual scrolling in either direction. Keep
+the native anchors and sticky behaviour functional without JavaScript.
+Do not replace it with a header fixed from the start.
 Refine this established design rather than replacing it. Keep comfortable body
 text, clear section labels and thin rules. Align the service descriptions to the
 introductory text column, with wider stacked headings on tablets and phones.

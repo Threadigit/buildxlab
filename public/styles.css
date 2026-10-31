@@ -46,10 +46,13 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; }
 .margin-note>p { color: var(--muted); max-width: 26ch; }
 h1 { font-size: clamp(32px, 3.5vw, 49px); line-height: 1.14; letter-spacing: -.035em; text-wrap: balance; }
 .intro-copy>p { font-size: 15px; line-height: 1.8; max-width: 65ch; margin-top: 24px; color: #474745; }
-.index { position: sticky; top: 0; z-index: 10; background: var(--paper); display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; border-block: 1px solid var(--rule); padding-block: 4px; }
-.index>a { min-height: 44px; display: flex; gap: 18px; align-items: center; font-size: 12px; padding-block: 14px; }
+.navigation { position: sticky; top: 0; z-index: 20; background: var(--paper); border-block: 1px solid var(--rule); }
+.index { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding-block: 4px; }
+.index>a { min-height: 44px; display: flex; gap: 18px; align-items: center; font-size: 12px; padding: 14px; }
 .index>a:hover { color: var(--ink); text-underline-offset: 5px; }
 .index>a:focus-visible { outline-offset: -3px; }
+.index>a[aria-current="location"] { background: var(--ink); color: var(--paper); }
+.index>a[aria-current="location"]>span { color: #c9c9c5; }
 .index>a>span { color: var(--muted); font-size: 10px; margin: 0; font-variant-numeric: tabular-nums; }
 .ambition { display: grid; grid-template-columns: 1fr 2.7fr; gap: var(--section-gap); margin-block: 32px 24px; padding: 26px 30px; background: var(--ink); color: var(--paper); }
 .ambition>h2 { font-family: Inter, Arial, sans-serif; font-size: 11px; padding-top: 3px; }
@@ -130,7 +133,7 @@ h1 { font-size: clamp(32px, 3.5vw, 49px); line-height: 1.14; letter-spacing: -.0
   .desktop-break { display: none; }
   .intro-copy>p { font-size: 15px; margin-top: 20px; }
   .index { grid-template-columns: 1fr 1fr; gap: 0 24px; padding-block: 6px; }
-  .index>a { font-size: 12px; gap: 15px; padding-block: 10px; }
+  .index>a { font-size: 12px; gap: 15px; padding: 10px 12px; }
   .ambition { display: block; margin-block: 24px 38px; padding: 23px 22px; }
   .ambition>h2 { padding: 0; font-size: 11px; margin-bottom: 13px; }
   .ambition>p { font-size: 15px; }
