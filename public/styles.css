@@ -63,9 +63,7 @@ h3 { font-size: 22px; line-height: 1.3; letter-spacing: -.015em; }
 .track>p { font-size: 12px; line-height: 1.8; margin-top: 10px; color: #51514e; }
 .track>a { display: inline-block; font-size: 11px; margin-top: 12px; padding-block: 8px; border-bottom: 1px solid var(--ink); }
 .track .arrow { margin-left: 4px; }
-.ai-native { border-top: 1px solid var(--rule); padding-top: 21px; margin-top: 28px; }
-.ai-native>p { color: #51514e; font-size: 13px; line-height: 1.8; margin-top: 10px; }
-.ai-native>a, .organisation-link { display: inline-block; font-size: 12px; padding-block: 8px; border-bottom: 1px solid var(--ink); margin-top: 12px; }
+.organisation-link { display: inline-block; font-size: 12px; padding-block: 8px; border-bottom: 1px solid var(--ink); margin-top: 12px; }
 .note { color: var(--muted); font-size: 11px!important; line-height: 1.7; margin-top: 22px; }
 .company-heading { font-family: Inter, Arial, sans-serif; font-size: 11px; margin-top: 26px; letter-spacing: 0; }
 .companies { display: flex; gap: 40px; flex-wrap: wrap; padding-top: 15px; font: 400 31px/1.3 var(--display); letter-spacing: -.03em; }
@@ -115,8 +113,6 @@ footer>span:first-child { color: var(--ink); font-family: var(--display); font-s
   .track { padding-top: 16px; }
   .track>p { font-size: 13px; }
   .track>a { font-size: 12px; margin-top: 10px; }
-  .ai-native { margin-top: 25px; }
-  .ai-native>p { font-size: 13px; }
   .note { font-size: 11px!important; }
   .companies { gap: 28px; font-size: 31px; }
   .contact { display: block; margin-top: 10px; padding-block: 28px 32px; }

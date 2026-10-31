@@ -31,7 +31,7 @@ with sync_playwright() as p:
   page.wait_for_function("location.hash==='#organisations'")
   assert page.get_by_role('link',name='Discuss your organisation').get_attribute('href').startswith('mailto:x@buybuild.xyz')
   for image in page.locator('img').all():assert image.evaluate('e=>e.complete&&e.naturalWidth>0'),image.get_attribute('src')
-  assert '70%' in page.locator('.ambition').inner_text()
+  assert '80%' in page.locator('.ambition').inner_text()
   assert 'target we are working towards' in page.locator('.ambition').text_content()
   assert page.get_by_role('heading',name='Companies we are working with.').count()==1
   assert all(a.get_attribute('href').startswith('mailto:x@buybuild.xyz') for a in page.locator('.track>a').all())
@@ -40,7 +40,7 @@ with sync_playwright() as p:
   assert not errors,errors
   assert not failed,failed
   assert page.evaluate("performance.getEntriesByType('resource').every(r=>new URL(r.name).origin===location.origin)"),'third-party startup request'
-  print(f'PASS {width}x{height}: no overflow/errors, links, images, 70% target, first-party loading')
+  print(f'PASS {width}x{height}: no overflow/errors, links, images, 80% target, first-party loading')
   page.close()
  # Core copy and navigation continue to work without JavaScript.
  page=browser.new_page(java_script_enabled=False,ignore_https_errors=bool(os.environ.get('CODEX_PROXY_CERT')))

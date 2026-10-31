@@ -17,10 +17,13 @@ without naming any capital partner.
 Use restrained typography and useful copy. Do not reintroduce green/lime,
 invented stack illustrations, generic icon cards or exaggerated claims.
 Say "Companies we are working with" for Novacrust and Pagoramp.
-Builder development includes Product Builder and Market Builder tracks, plus
-help getting started with AI-native building. Contact: x@buybuild.xyz.
+Builder development includes Product Builder and Market Builder tracks.
+Do not add a standalone AI-native beginner training section. Contact: x@buybuild.xyz.
 
 Cover the full model: build software and hardware for smaller teams; train Product
-and Market Builders and AI-native beginners; incubate to put the approach to the
+and Market Builders; incubate to put the approach to the
 test; help organisations adopt technology and AI-native ways of working.
-Keep the 70% figure conditional and aspirational.
+Keep the 80% figure conditional and aspirational.
+
+The current target is companies of no more than two people, equipped with the
+right technology stack. Reflect this in the introduction and social preview.
