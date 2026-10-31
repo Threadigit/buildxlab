@@ -4,7 +4,8 @@ Read README.md and DEPLOYMENT.md before changes. Keep the site static, lightweig
 responsive, keyboard accessible and functional without JavaScript.
 
 Preserve the owner-approved positioning: technology, builder training, venture
-incubation, with technology handling 70% of work as an ambition. Do not present
+incubation to test the approach, and helping organisations adopt technology and
+AI-native workflows. Technology handling 70% of work is an ambition. Do not present
 future AI/compute ownership as already achieved, or funding as guaranteed.
 Use x@buybuild.xyz for contact until the owner supplies an official address.
 Use only the BuildxLab name, without a B/X logo. Mention potential funding

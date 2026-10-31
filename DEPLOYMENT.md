@@ -30,7 +30,8 @@ All four domains are attached and ownership verified in Vercel:
 - www.buildxlab.co, buildxlab.xyz, www.buildxlab.xyz: 308 to buildxlab.co.
 
 DNS remains on Namecheap (dns1/dns2.registrar-servers.com), currently forwarding
-or parking. No connected tool can edit the authoritative Namecheap zone.
+or parking. TinyFish browser automation is now connected; Namecheap sign-in
+is still required before it can edit the authoritative DNS zone.
 Vercel's current rank-1 recommendations for BOTH domains:
 
 | Type | Host | Value |

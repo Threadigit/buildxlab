@@ -4,7 +4,7 @@ A fast, dependency-free one-page website for BuildxLab, a technology and
 venture-building company.
 
 The page introduces software/hardware development, Product Builder and Market
-Builder training, incubation of Novacrust and Pagoramp, help getting started with AI-native building, and potential funding.
+Builder training, incubation of Novacrust and Pagoramp, help getting started with AI-native building, organisational transition to technology and AI-native workflows, and potential funding.
 The 70% technology-powered work figure is clearly an
 ambition, not an achieved metric. Owned AI tools and computing are long-term plans.
 
@@ -16,7 +16,9 @@ ambition, not an achieved metric. Owned AI tools and computing are long-term pla
   Set BUILDXLAB_TEST_URL to test a deployment instead of the local preview.
 
 Fonts and graphics are served locally. See DESIGN.md for the approved brand reference. Font licenses are in public/assets/fonts/.
-The website renders and navigates without JavaScript. Contact and training links
+The website renders and navigates without JavaScript. The section menu stays
+visible while scrolling; anchor offsets keep headings clear on phones and desktops.
+The browser icon and social preview use the full BuildxLab name. Contact and training links
 use x@buybuild.xyz, the temporary address requested by the owner.
 
 ## Hosting

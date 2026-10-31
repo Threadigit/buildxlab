@@ -8,6 +8,8 @@ and Inter body typography, thin rules, and numbered
 sections. It adapts this to a responsive webpage. No private training slides or
 facilitator notes are published on the website.
 
+The page uses a compact editorial layout: a prominent name, a specific purpose,
+a sticky section index, and four areas of work with consistent column alignment.
 The owner requests a name-only BuildxLab identity. Do not use the deck's B/X
 monogram, including in the favicon or social preview. Mention potential funding
 without naming any capital partner.
@@ -17,3 +19,8 @@ invented stack illustrations, generic icon cards or exaggerated claims.
 Say "Companies we are working with" for Novacrust and Pagoramp.
 Builder development includes Product Builder and Market Builder tracks, plus
 help getting started with AI-native building. Contact: x@buybuild.xyz.
+
+Cover the full model: build software and hardware for smaller teams; train Product
+and Market Builders and AI-native beginners; incubate to put the approach to the
+test; help organisations adopt technology and AI-native ways of working.
+Keep the 70% figure conditional and aspirational.
