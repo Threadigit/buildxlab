@@ -1,6 +1,6 @@
 # Deployment status
 
-- Intended source: private GitHub repository adetuyiTolu/buildxlab.
+- Intended source: GitHub repository Threadigit/buildxlab.
 - Hosting: Vercel, Git integration, main as production branch.
 - Primary domain: buildxlab.co.
 - Domain DNS currently uses Namecheap nameservers. Website A/CNAME records must
