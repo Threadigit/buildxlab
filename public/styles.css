@@ -75,6 +75,11 @@ h1 { font-size: clamp(32px, 3.5vw, 49px); line-height: 1.14; letter-spacing: -.0
 .track>a:hover, .organisation-link:hover { text-decoration-color: var(--ink); }
 .incubation { background: var(--ink); color: var(--paper); }
 .incubation>.wrap { padding-block: var(--section-space); }
+.incubation .section-top { display: block; }
+.incubation .section-heading>h2 { max-width: none; }
+.incubation .section-body { max-width: 68ch; margin-top: 24px; padding-top: 0; }
+.incubation .section-body>p { max-width: none; }
+.incubation .company-heading { margin-top: 32px; }
 .incubation .eyebrow, .incubation .muted, .incubation .company-heading, .incubation .company-domain { color: #b9b9b5; }
 .incubation .section-body>p:first-child { color: #e6e6e2; }
 .incubation .companies>a { border-color: #50504d; }

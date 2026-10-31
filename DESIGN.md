@@ -17,7 +17,8 @@ Use a near-black incubation section for restrained monochrome alternation.
 Sections have distinct roles: a clear introduction and ambition; technology;
 builder training with full-width role rows; an incubation section with links
 to the real companies; organisational transition; and a direct email contact.
-Funding belongs in the incubation description, above the company list.
+The incubation heading, description, funding note and company caption share one
+left-aligned reading flow. Funding belongs above the company list.
 The website must render and navigate without JavaScript, with visible keyboard
 focus, a working skip link, comfortable tap areas and unobscured anchor headings.
 Do not introduce animations that hide content or external startup requests.
