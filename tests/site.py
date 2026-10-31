@@ -23,7 +23,7 @@ with sync_playwright() as p:
   page.get_by_role('link',name='Builders',exact=True).click()
   page.wait_for_function("location.hash==='#builders'")
   assert page.locator('#builders-title').is_visible()
-  nav=page.locator('.index').bounding_box()
+  nav=page.locator('.site-header').bounding_box()
   heading=page.locator('#builders-title').bounding_box()
   assert abs(nav['y'])<2,f'menu is not stable at {width}: {nav}'
   assert heading['y']>=nav['y']+nav['height'],f'menu covers heading at {width}'

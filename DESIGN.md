@@ -1,31 +1,37 @@
-# Brand reference
+# Design and content direction
 
-The owner supplied BuildX Module 00 Foundation:
+BuildxLab uses a restrained black-and-white identity, with the company name only.
+The owner supplied this training deck as a brand reference:
 https://docs.google.com/presentation/d/1Q9DU-MMAY7kFSRG25DJg8C4TI9yWRcRN1DvYhDFisPs/edit
 
-The site follows its near-black / off-white palette, regular Inter Tight display
-and Inter body typography, thin rules, and numbered
-sections. It adapts this to a responsive webpage. No private training slides or
-facilitator notes are published on the website.
+The current website pairs Source Serif display typography with Inter body text
+and an Inter Tight name. All fonts are served locally with their licenses.
+Use a compact persistent header, comfortable body text, thin rules, and generous
+but deliberate spacing. Keep the visual hierarchy clear on phones and desktops.
 
-The page uses a compact editorial layout: a prominent name, a specific purpose,
-a sticky section index, and four areas of work with consistent column alignment.
-The owner requests a name-only BuildxLab identity. Do not use the deck's B/X
-monogram, including in the favicon or social preview. Mention potential funding
-without naming any capital partner.
+Sections have distinct roles: a clear introduction and ambition; technology;
+builder training with full-width role rows; a dark incubation section with links
+to the real companies; organisational transition; and a direct email contact.
+Funding belongs in the incubation description, above the company list.
+The website must render and navigate without JavaScript, with visible keyboard
+focus, a working skip link, comfortable tap areas and unobscured anchor headings.
+Do not introduce animations that hide content or external startup requests.
 
-Use restrained typography and useful copy. Do not reintroduce green/lime,
-invented stack illustrations, generic icon cards or exaggerated claims.
-Say "Companies we are working with" for Novacrust and Pagoramp.
-Builder development includes Product Builder and Market Builder tracks.
-Teach AI-assisted research, prototyping, product development and business workflows
-within the builder-training introduction. Do not add a standalone AI-native
-beginner training section. Contact: x@buybuild.xyz.
+## Owner-approved content
 
-Cover the full model: build software and hardware for smaller teams; train Product
-and Market Builders; incubate to put the approach to the
-test; help organisations adopt technology and AI-native ways of working.
-Keep the 80% figure conditional and aspirational.
+- Build products and profitable businesses with up to two people equipped with
+  the right technology stack. Technology carrying 80% of the work is an ambition,
+  not an achieved metric. Owned AI tools and computing are longer-term plans.
+- Build software and hardware, train builders, incubate to put the approach to
+  the test, and help organisations adopt technology and AI-native workflows.
+- Product Builder and Market Builder are the two training roles. AI research,
+  prototyping, product development and business workflows belong in the training
+  introduction. Do not add a standalone AI beginner section or availability note.
+- Say "Companies we are working with" for Novacrust and Pagoramp. Link to
+  https://novacrust.com/ and https://pagoramp.com/.
+- Mention potential funding without naming a funding partner or promising it.
+- Use x@buybuild.xyz until an official contact is supplied.
 
-The current target is companies of no more than two people, equipped with the
-right technology stack. Reflect this in the introduction and social preview.
+No B/X monogram, invented product illustrations, generic feature cards, fake
+metrics, testimonials or client logos. No private training slides or facilitator
+notes are published. Browser icon and link preview use the BuildxLab name.
