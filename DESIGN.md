@@ -53,3 +53,8 @@ No B/X monogram, invented product illustrations, generic feature cards, fake
 metrics, testimonials or client logos. No private training slides or facilitator
 notes are published. The link preview uses the BuildxLab name and Inter Tight typography. The browser
 icon is a small, high-contrast vector digital x; the touch avatar remains the name.
+
+Keep service descriptions specific to the work. Training actions are enquiries
+by email, not links to course pages. Avoid repeated slogans in the margin or
+footer. Align the ambition text to the introductory column; stack the corporate
+section at tablet widths so its approved heading has enough space.

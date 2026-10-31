@@ -38,3 +38,30 @@ skip link remains above the sticky menu. All startup resources are first-party.
 The 1200×630 link preview, 512×512 touch avatar and SVG favicon were validated.
 Approved mission, 80% ambition, two-person target, training roles, company links,
 funding qualification and contact address are preserved.
+
+
+## Follow-up: copy and visual consistency
+
+Baseline: a2665bb. Reviewed the live page and full-page phone, tablet and desktop
+screenshots, then refined the established design.
+
+- Replaced broad service slogans with software/hardware, product/market training,
+  and working alongside founders. Descriptions now name the work rather than
+  repeating “our approach”.
+- Shortened the introduction and ambition without changing the two-person goal,
+  80% target or the distinction between current work and future infrastructure.
+- Removed the repeated purpose note and footer slogan.
+- Made email-based training links explicit enquiries, with distinct accessible
+  names that include the visible label. Corporate contact now names technology
+  adoption. Search and social descriptions reflect the same concrete services.
+- Aligned the ambition paragraph to the main text column. Increased navigation,
+  action links and company domains to 13px; improved header/footer small text.
+- Stacked the corporate section below 1200px to avoid a narrow four-line heading.
+  The owner's corporate wording and company caption remain unchanged.
+
+Checked 20 widths from 320 to 2560px, including 1100, 1200 and 1201px around the
+new layout threshold. No horizontal overflow or clipped headings; all links
+retain 44px targets. Desktop ambition text aligns with the introduction.
+Reviewed final screenshots at 390, 1024 and 1440px and the pinned desktop menu.
+The existing six-size functional suite covers native anchors, section tracking,
+footer navigation, direct links and operation without JavaScript.
