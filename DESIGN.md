@@ -18,7 +18,9 @@ Use restrained typography and useful copy. Do not reintroduce green/lime,
 invented stack illustrations, generic icon cards or exaggerated claims.
 Say "Companies we are working with" for Novacrust and Pagoramp.
 Builder development includes Product Builder and Market Builder tracks.
-Do not add a standalone AI-native beginner training section. Contact: x@buybuild.xyz.
+Teach AI-assisted research, prototyping, product development and business workflows
+within the builder-training introduction. Do not add a standalone AI-native
+beginner training section. Contact: x@buybuild.xyz.
 
 Cover the full model: build software and hardware for smaller teams; train Product
 and Market Builders; incubate to put the approach to the
