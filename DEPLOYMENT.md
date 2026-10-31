@@ -9,8 +9,8 @@ Reuse the existing project and repository.
 - Primary production URL: https://buildxlab.co.
 - Vercel alias: https://buildxlab.vercel.app.
 - Automatic Git deployment verified; no manual uploads are needed.
-- Verified content deployment: dpl_FNiyeeXfD93RfiKaEPJJJZKo1zqQ, READY,
-  source dd1d7b92797d49fb54971a5c34cc407547547531.
+- Production deployments track GitHub main. Inspect the latest deployment and
+  match its commit to the change being verified.
 - Framework Other/static, Node 22.x, build npm run build, output dist,
   install npm install --ignore-scripts. Production is public.
 

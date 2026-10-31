@@ -10,7 +10,10 @@ prominent name and off-white background. All fonts are served locally with licen
 The section menu follows the introduction, scrolls naturally, then sticks at the
 top of the viewport. Its background spans the full viewport while the links
 remain aligned with the content grid. Highlight the reading position with
-aria-current="location", including manual scrolling in either direction. Keep
+aria-current="location", including manual scrolling in either direction. Use a
+fine underline only beneath the current label. No filled active blocks or
+permanent divider lines above/below the menu; indicators stay hidden before
+the first content section is reached. Keep
 the native anchors and sticky behaviour functional without JavaScript.
 Do not replace it with a header fixed from the start.
 Refine this established design rather than replacing it. Keep comfortable body
@@ -23,6 +26,8 @@ builder training with full-width role rows; an incubation section with links
 to the real companies; organisational transition; and a direct email contact.
 The incubation heading, description, funding note and company caption share one
 left-aligned reading flow. Funding belongs above the company list.
+Primary body text is 16px, with quieter 15px secondary copy. Keep link targets
+at least 44px high. The footer name returns to the top of the page.
 The website must render and navigate without JavaScript, with visible keyboard
 focus, a working skip link, comfortable tap areas and unobscured anchor headings.
 Do not introduce animations that hide content or external startup requests.

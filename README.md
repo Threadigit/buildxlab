@@ -24,6 +24,8 @@ without JavaScript. Anchor offsets keep headings clear on phones and desktops.
 The browser icon uses a custom digital x; the social preview uses the full BuildxLab name. Contact and training links
 use x@buybuild.xyz, the temporary address requested by the owner.
 
+See UI-AUDIT.md for the current visual and interaction audit.
+
 ## Hosting
 
 Vercel settings are declared in vercel.json: Other/static framework, `npm run

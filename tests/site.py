@@ -21,6 +21,9 @@ with sync_playwright() as p:
    target=link.get_attribute('href')
    if len(target)>1:assert page.locator(target).count()==1,target
   assert page.locator('.index').bounding_box()['y']>0,'menu must scroll into place first'
+  assert page.locator('.navigation').evaluate("e=>getComputedStyle(e).borderTopWidth==='0px'&&getComputedStyle(e).borderBottomWidth==='0px'"),'menu must not have permanent divider lines'
+  assert page.locator('.nav-label').evaluate_all("els=>els.every(e=>getComputedStyle(e,'::after').opacity==='0')"),'indicators must stay hidden before a section is reached'
+  assert page.get_by_role('link',name='Talk to us',exact=True).bounding_box()['height']>=44
   page.get_by_role('link',name='Builders',exact=True).click()
   page.wait_for_function("location.hash==='#builders'")
   assert page.locator('#builders-title').is_visible()
@@ -43,13 +46,16 @@ with sync_playwright() as p:
    page.evaluate("id=>window.scrollTo(0,document.getElementById(id).getBoundingClientRect().top+scrollY-document.querySelector('.navigation').offsetHeight-16)",section_id)
    page.wait_for_function("id=>document.querySelector('.index a[aria-current=\"location\"]')?.getAttribute('href')==='#'+id",arg=section_id,timeout=3000)
    assert page.locator('.index a[aria-current="location"]').count()==1
+   assert page.locator('.index a[aria-current] .nav-label').evaluate("e=>getComputedStyle(e,'::after').opacity==='1'"),'current section must have a fine text indicator'
+   assert page.locator('.index a[aria-current]').evaluate("e=>getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)'"),'active section must not use a black block'
+   assert page.locator('.index a:not([aria-current]) .nav-label').evaluate_all("els=>els.every(e=>getComputedStyle(e,'::after').opacity==='0')")
    if section_id=='companies':
     assert page.evaluate("[1,innerWidth-1].every(x=>document.elementFromPoint(x,20)?.closest('.navigation'))"),'menu background detaches over dark section'
   assert page.evaluate('location.hash')==original_hash
   page.evaluate('window.scrollTo(0,document.documentElement.scrollHeight)')
   page.wait_for_function("document.querySelector('.index a[aria-current=\"location\"]')?.getAttribute('href')==='#organisations'",timeout=3000)
   assert abs(page.locator('.navigation').bounding_box()['y'])<2,'menu must stay pinned through the footer'
-  page.evaluate('window.scrollTo(0,0)')
+  page.get_by_role('link',name='Back to BuildxLab home',exact=True).click()
   page.wait_for_function("!document.querySelector('.index a[aria-current]')",timeout=3000)
   page.mouse.move(0,0)
   page.screenshot(path=f'/tmp/buildxlab-{width}.png',full_page=True)

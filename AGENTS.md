@@ -26,3 +26,6 @@ The company heading is "Companies currently in incubation."
 
 Polish the current design rather than replacing it. A dark incubation section is
 authorized. The corporate heading is "Help Corporate Organisations make the transition".
+
+Use a fine underline for the current menu label, with no filled active block or
+permanent menu divider lines. Indicators appear only after reaching a section.
