@@ -23,8 +23,9 @@ with sync_playwright() as p:
   page.wait_for_function("location.hash==='#builders'")
   assert page.locator('#builders-title').is_visible()
   for image in page.locator('img').all():assert image.evaluate('e=>e.complete&&e.naturalWidth>0'),image.get_attribute('src')
-  assert '70%' in page.locator('.hero-description').inner_text()
-  assert 'Our target' in page.locator('.vision-target').text_content()
+  assert '70%' in page.locator('.ambition').inner_text()
+  assert 'Our target' in page.locator('.target').text_content()
+  assert page.get_by_role('heading',name='Companies we are working with.').count()==1
   assert all(a.get_attribute('href').startswith('mailto:x@buybuild.xyz') for a in page.locator('.track>a').all())
   page.evaluate('window.scrollTo(0,0)')
   page.screenshot(path=f'/tmp/buildxlab-{width}.png',full_page=True)
