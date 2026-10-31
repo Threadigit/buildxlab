@@ -4,8 +4,8 @@ A fast, dependency-free one-page website for BuildxLab, a technology and
 venture-building company.
 
 The page introduces software/hardware development, Product Builder and Market
-Builder training, incubation of Novacrust and Pagoramp, help getting started with AI-native building, and potential access to
-Buildx Capital backing. The 70% technology-powered work figure is clearly an
+Builder training, incubation of Novacrust and Pagoramp, help getting started with AI-native building, and potential funding.
+The 70% technology-powered work figure is clearly an
 ambition, not an achieved metric. Owned AI tools and computing are long-term plans.
 
 ## Local development
