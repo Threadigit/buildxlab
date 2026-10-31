@@ -30,6 +30,6 @@ GitHub main is connected to Vercel and deploys automatically on every push.
 Production is public; source is published in Threadigit/buildxlab.
 Domain attachment and DNS status are recorded in DEPLOYMENT.md.
 
-Primary domain: buildxlab.co. www.buildxlab.co and buildxlab.xyz should redirect
-to the primary once their DNS and Vercel domain attachments are configured.
+Primary domain: buildxlab.co. www.buildxlab.co, buildxlab.xyz and www.buildxlab.xyz
+redirect to the primary. DNS, HTTPS and all redirects are verified working.
 Do not change existing MX/email records when configuring website DNS.
